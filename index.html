@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact-Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header d-flex justify-content-center">
+        <h1>Contact-Us</h1>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <br />
+          <div class="col-md-6">
+            <form action="save_contact.php" method="POST">
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email Id</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email Address"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Contact Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact_number"
+                  placeholder="Conatct Number"
+                  name="contact_number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="form-message">Enter your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <input class="btn btn-primary" type="submit" value="submit" />
+            </form>
+          </div>
+          <br />
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60544.731533297716!2d73.7626864!3d18.4815881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2be933201c149%3A0x1c055d83993ff72b!2sZeal%20College%20of%20Engineering%20and%20Research!5e0!3m2!1sen!2sin!4v1714625580635!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
